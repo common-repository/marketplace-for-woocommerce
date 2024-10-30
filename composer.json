@@ -1,0 +1,36 @@
+{
+	"name": "algoritmika/marketplace-for-woocommerce",		
+	"authors": [
+		{
+			"name": "Tomas Anbinderis",
+			"email": "anbinderis@gmail.com"
+		},
+		{
+			"name": "Pablo Pacheco",
+			"email": "pablo.sg.pacheco@gmail.com"
+		}
+	],
+	"config": {
+		"preferred-install": "dist",
+		"optimize-autoloader": true
+	},	
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/wpcodefactory/cmb-field-select2"
+		}
+	],
+	"require": {		
+		"cmb2/cmb2": "dev-master",
+		"mustardbees/cmb-field-select2": "dev-master"
+	},	
+	"autoload": {
+		"files": [
+			"vendor/cmb2/cmb2/init.php",
+			"vendor/mustardBees/cmb-field-select2/cmb-field-select2.php"
+		],
+		"classmap": [
+			"classes/"
+		]
+	}
+}
